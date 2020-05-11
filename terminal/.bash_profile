@@ -1,4 +1,4 @@
-etxport http_proxy=http://www-proxy-adcq7-new.us.oracle.com:80
+export http_proxy=http://www-proxy-adcq7-new.us.oracle.com:80
 export https_proxy=http://www-proxy-adcq7-new.us.oracle.com:80
 export no_proxy='localhost,127.0.0.1,.oracle.com,.oraclecorp.com,.grungy.us'
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
