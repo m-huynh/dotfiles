@@ -20,8 +20,8 @@ source /Users/michahuy/tools/pic-tools/scripts/*.env
 #fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-#ssh auto fill
-alias yubifix='pkill -9 ssh-agent;pkill -9 ssh-pkcs11-helper;ssh-add -k -s /usr/local/lib/opensc-pkcs11.so; ssh-add -l'
+#ssh fix yubifix 
+alias yubifix='pkill -9 ssh-agent;pkill -9 ssh-pkcs11-helper;ssh-add -e /usr/local/lib/opensc-pkcs11.so;ssh-add -k -s /usr/local/lib/opensc-pkcs11.so; ssh-add -l'
 export PATH=/Users/michahuy/bin:$PATH
 # Yubikey handler
 reload-ssh() {
@@ -39,3 +39,5 @@ alias cdb='cd ..'
 
 
 [[ -e "/Users/michahuy/lib/oracle-cli/lib/python3.7/site-packages/oci_cli/bin/oci_autocomplete.sh" ]] && source "/Users/michahuy/lib/oracle-cli/lib/python3.7/site-packages/oci_cli/bin/oci_autocomplete.sh"
+
+[[ -e "/Users/michahuy/lib/oracle-cli/lib/python3.8/site-packages/oci_cli/bin/oci_autocomplete.sh" ]] && source "/Users/michahuy/lib/oracle-cli/lib/python3.8/site-packages/oci_cli/bin/oci_autocomplete.sh"
